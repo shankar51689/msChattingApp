@@ -1,9 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".Login">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <data>
+
+    </data>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:background="#F6F7F6"
+        tools:context=".LoginActivity">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/pic2"/>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="90dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:hint="@string/enter_email_id"
+                android:paddingStart="25dp"
+                android:background="@drawable/edit_text_bg"
+                tools:ignore="RtlSymmetry" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:hint="@string/enter_password"
+                android:layout_marginTop="30dp"
+                android:paddingStart="25dp"
+                android:background="@drawable/edit_text_bg"
+                tools:ignore="RtlSymmetry" />
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnLogin"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="@string/login"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:textStyle="bold"
+                android:background="@drawable/login_btn_bg" />
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnSingIn"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="@string/sign_in"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"
+                android:background="@drawable/login_btn_bg" />
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</layout>
